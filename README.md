@@ -34,6 +34,7 @@ xhost +
 
 ~~~
 docker run -ti --rm \
+           --ulimit 65536
            -e DISPLAY=$DISPLAY \
            -e artifactory_host='IP:PUERTO'\
 	   --name eclipse \
